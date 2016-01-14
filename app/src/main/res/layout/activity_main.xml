@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.annissa.firstapp_annissaalusi.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:textSize="42dp"
+        android:text="ANIMALZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What type of personality are you?"
+        android:id="@+id/textView" />
+
+<RadioGroup
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Innocent"
+            android:id="@+id/innocent"
+            android:onClick="selectionMade"
+            android:clickable="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playful"
+            android:id="@+id/playful"
+            android:onClick="selectionMade"
+            android:clickable="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sneaky"
+            android:id="@+id/sneaky"
+            android:onClick="selectionMade"
+            android:clickable="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mischevious"
+            android:id="@+id/mischevious"
+            android:onClick="selectionMade"
+            android:clickable="false" />
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myImage"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.42" />
+</LinearLayout>
